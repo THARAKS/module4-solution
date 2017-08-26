@@ -1,0 +1,20 @@
+<br>
+<br>
+<h4>Menu Items  of Selected Category </h3>
+<br>
+    <table class="table table-hover table-bordered table-responsive">
+      <thead class="thead-inverse">
+      <tr>
+      <th>Iteam Name </th>
+      <th>Iteam Description </th>
+      <th>Iteam Price </th>
+      </tr>
+    </thead>
+        <tbody>
+        <tr  ng-repeat="item in $ctrl.items">
+          <td>{{ item.name }}</td>
+          <td> {{item.description}}</td>
+          <td>{{ item.price_small }}</td>
+        </tr>
+      </tbody>
+      </table>
